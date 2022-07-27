@@ -14,15 +14,27 @@
     <title>Blog Space</title>
   </head>
   <body>
-    <h1>Blog Space</h1>
+    <nav>
+      <h1>Blog Space</h1>
+    </nav>
+    <form>
+      <label for="post-title">Title</label>
+      <input
+        id="post-title"
+        type="text"
+        placeholder="Type here your post title"
+      />
+      <label for="post-body">Body</label>
+      <textarea
+        id="post-body"
+        placeholder="Type here your post body"
+      ></textarea>
+      <button>Post</button>
+    </form>
     <main>
       <div class="posts" id="articles"></div>
       <div class="main-img">
-        <img
-          src="images/girl-writing.jpg"
-          alt="girl-writing"
-          width="200"
-        />
+        <img src="images/girl-writing.jpg" alt="girl-writing" width="200" />
       </div>
     </main>
     <script src="script.js"></script>

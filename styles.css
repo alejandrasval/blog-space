@@ -28,11 +28,44 @@ h2 {
   margin: 1em 0;
   opacity: 0.5;
 }
+
 p {
   font-size: 1.5rem;
 }
 
 /* Layout */
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+form > input,
+form > textarea,
+form > button {
+  width: 100%;
+  border: 1px solid #dfe8cc;
+}
+
+form > * {
+  margin: 0.5em;
+}
+
+label {
+  align-self: center;
+}
+
+textarea::placeholder {
+  padding-top: 7px;
+}
+
+button {
+  background-color: #808665;
+  color: #fff;
+  border-radius: 10px;
+}
 
 .posts {
   border-radius: 2em;
@@ -60,7 +93,7 @@ p {
 
 @media (min-width: 700px) {
   main {
-    margin: 1.5em;
+    margin: 0 1.5em;
     display: flex;
   }
 
@@ -70,5 +103,16 @@ p {
 
   .main-img {
     width: 50%;
+  }
+
+  form {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  form > input,
+  form > textarea,
+  form > button {
+    width: 70%;
   }
 }
